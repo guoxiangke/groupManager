@@ -1,5 +1,5 @@
 {
-    "name": "vbot/group-manager",
+    "name": "guoxiangke/group-manager",
     "description": "Extension of weixin group manager for groupOwner",
     "type": "library",
     "require": {
