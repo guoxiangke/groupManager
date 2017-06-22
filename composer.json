@@ -1,0 +1,15 @@
+{
+    "name": "vbot/group-manager",
+    "description": "Extension of weixin group manager for groupOwner",
+    "type": "library",
+    "require": {
+        "hanson/vbot": "^2.0.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dale",
+            "email": "dale.guo@mullenloweprofero.com"
+        }
+    ]
+}
