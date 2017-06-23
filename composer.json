@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Guoxiangke\\GuessNumber\\": "src/"
+            "Guoxiangke\\GroupMangaer\\": "src/"
         }
     }
 }
