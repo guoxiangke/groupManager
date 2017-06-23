@@ -14,7 +14,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Guoxiangke\\GroupMangaer\\": "src/"
+            "Guoxiangke\\GroupManager\\": "src/"
         }
     }
 }
