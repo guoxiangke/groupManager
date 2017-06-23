@@ -2,7 +2,7 @@
     "name": "guoxiangke/group-manager",
     "description": "Extension of weixin group manager for groupOwner",
     "type": "library",
-    "require": {
+    "require-dev": {
         "hanson/vbot": "^2.0.1"
     },
     "license": "MIT",
