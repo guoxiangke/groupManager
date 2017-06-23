@@ -11,5 +11,10 @@
             "name": "dale",
             "email": "dale.guo@mullenloweprofero.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Guoxiangke\\GuessNumber\\": "src/"
+        }
+    }
 }

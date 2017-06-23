@@ -1,6 +1,6 @@
 <?php
 
-namespace Vbot\GroupManager;
+namespace Guoxiangke\GroupManager;
 
 use Hanson\Vbot\Extension\AbstractMessageHandler;
 
