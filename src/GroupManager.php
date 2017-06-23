@@ -14,7 +14,7 @@ use Illuminate\Support\Collection;
 class GroupManager extends AbstractMessageHandler
 {
 
-    public $author = 'Dale';
+    public $author = 'Dale.Guo';
 
     public $version = '1.0';
 
@@ -47,8 +47,8 @@ class GroupManager extends AbstractMessageHandler
             
             
 
-            // vbot('console')->log('fromNickName','<pre>'.print_r($group,1));
-            if (in_array($message['from']['NickName'], ['天空蔚蓝'])) {//bug TODO name？！
+            // begin 自动转发
+            if (in_array($message['from']['NickName'], ['天空蔚蓝','xiaoyong','小永'])) {//bug TODO  set ［var］ name？！
                 //check B if in AA?
                 $is_ingroup = false;
                 foreach ($group['MemberList'] as  $member) {
@@ -64,19 +64,6 @@ class GroupManager extends AbstractMessageHandler
                         Text::send($gid,$content);
 
                         //add message to DB
-                        $tmp_msg = [
-                            'from' => $myself->nickname,//'群主',// xiaoyong
-                            'wx_username'=>$myself->username,// @e4df27a4eb2f7e45153ffa06fed05a88
-                            'message' => $content,// @xiaoyong  hi
-                            'isAt' => $message['isAt'],// ==1 
-                            'room_id' => $group['NickName'],//$message['from']['NickName'],//智能小永体验群
-                            'redirector' => $message['from']['NickName'],//转发人
-                            'UserName' => $message['from']['UserName'],//转发人
-                            // 'NickName' => $message['sender']['NickName'],//小永
-                            'HeadImgUrl' => $message['from']['HeadImgUrl'],
-                            'timestamp' => time()
-                        ];
-                        static::saveMessage($tmp_msg);
                         //end DB
                         return;
                     }
