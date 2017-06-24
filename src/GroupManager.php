@@ -41,9 +41,10 @@ class GroupManager extends AbstractMessageHandler
             //check must be 群主
             if( isset($group['IsOwner']) && !$group['IsOwner']) {
                 continue;
-            }elseif( !isset($group['ChatRoomOwner']) || $group['ChatRoomOwner'] !== $myself->username) {
-                continue;
             }
+            // elseif( !isset($group['ChatRoomOwner']) || $group['ChatRoomOwner'] !== $myself->username) {
+            //     continue;
+            // }
             
             
 
